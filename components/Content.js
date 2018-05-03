@@ -12,7 +12,7 @@ type Props = {
 const AppContent = ({ children }: Props) => (
   <Content style={styles.content}>
     <Grid>
-      <Col>{children}</Col>
+      <Col style={styles.main}>{children}</Col>
     </Grid>
   </Content>
 );
@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
   content: {
     backgroundColor: $colorLight,
   },
+  main: {
+    paddingHorizontal: 16,
+    paddingTop: 8,
+  }
 })
 
 export default AppContent
